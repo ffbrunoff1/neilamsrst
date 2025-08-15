@@ -43,7 +43,7 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
             >
-              <span className="block bg-gradient-to-r from-primary-400 to-primary-500 bg-clip-text text-transparent text-shadow">Neil</span>
+              <span className="block text-white text-shadow">Neil</span>
               <span className="block bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 bg-clip-text text-transparent">
                 Amrst
               </span>
