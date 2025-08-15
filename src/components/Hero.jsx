@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Rocket, Star, Globe, Zap, ArrowRight, ChevronDown } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export default function Hero() {
+  const { t } = useTranslation()
   const scrollToAbout = () => {
     const element = document.getElementById('about')
     if (element) {

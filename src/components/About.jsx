@@ -1,14 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Rocket, Star, Globe, Zap, Award, Users, Target, Clock } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export default function About() {
+  const { t } = useTranslation()
   const achievements = [
     {
       icon: Rocket,
       title: "Missões Espaciais",
       count: "15+",
-      description: "Missões bem-sucedidas em órbita terrestre e lunar"
+      description: "Missões bem sucedidas em órbita terrestre e lunar"
     },
     {
       icon: Clock,
