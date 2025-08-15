@@ -42,7 +42,7 @@ export default {
       },
       backgroundImage: {
         'space-pattern':
-          'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)',
+          'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 1px)',
         'space-nebula':
           'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
         'space-galaxy':
