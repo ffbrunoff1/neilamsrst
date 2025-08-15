@@ -65,19 +65,19 @@ export default function Contact() {
       icon: Mail,
       title: "Email",
       value: "contato@neilamrst.space",
-      description: "Resposta em até 24 horas"
+      description: "Resposta em atÃ© 24 horas"
     },
     {
       icon: Globe,
-      title: "Localização",
+      title: "LocalizaÃ§Ã£o",
       value: "Centro de Treinamento Espacial",
-      description: "Disponível para missões globais"
+      description: "DisponÃ­vel para missÃµes globais"
     },
     {
       icon: Clock,
       title: "Disponibilidade",
-      value: "24/7 para Emergências",
-      description: "Suporte técnico espacial"
+      value: "24/7 para EmergÃªncias",
+      description: "Suporte tÃ©cnico espacial"
     }
   ]
 
@@ -110,7 +110,7 @@ export default function Contact() {
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
             Inicie uma Nova
-            <span className="block text-gradient">Missão Juntos</span>
+            <span className="block text-gradient">MissÃ£o Juntos</span>
           </motion.h2>
 
           <motion.p
@@ -120,7 +120,7 @@ export default function Contact() {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-200 max-w-3xl mx-auto leading-relaxed"
           >
-            Pronto para colaborar em projetos espaciais inovadores, consultorias técnicas ou compartilhar experiências sobre exploração espacial.
+            Pronto para colaborar em projetos espaciais inovadores, consultorias tÃ©cnicas ou compartilhar experiÃªncias sobre exploraÃ§Ã£o espacial.
           </motion.p>
         </motion.div>
 
@@ -183,16 +183,16 @@ export default function Contact() {
 
               <h3 className="text-2xl font-bold text-white mb-4">Projetos Especiais</h3>
               <p className="text-primary-200 leading-relaxed mb-6">
-                Interessado em colaborações únicas? Consultorias para missões espaciais, treinamentos especializados ou palestras sobre exploração espacial.
+                Interessado em colaboraÃ§Ãµes Ãºnicas? Consultorias para missÃµes espaciais, treinamentos especializados ou palestras sobre exploraÃ§Ã£o espacial.
               </p>
               
               <div className="flex items-center justify-center space-x-4 text-primary-300">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-sm">Disponível</span>
+                  <span className="text-sm">DisponÃ­vel</span>
                 </div>
                 <div className="w-px h-4 bg-primary-400/30"></div>
-                <div className="text-sm">Resposta Rápida</div>
+                <div className="text-sm">Resposta RÃ¡pida</div>
               </div>
             </motion.div>
           </motion.div>
@@ -206,7 +206,7 @@ export default function Contact() {
             <div className="glass-effect rounded-3xl p-8 space-glow">
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-white mb-2">Enviar Mensagem</h3>
-                <p className="text-primary-300">Preencha o formulário abaixo e entrarei em contato em breve.</p>
+                <p className="text-primary-300">Preencha o formulÃ¡rio abaixo e entrarei em contato em breve.</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -269,7 +269,7 @@ export default function Contact() {
                     required
                     rows={5}
                     className="w-full px-4 py-3 bg-secondary-800/50 border border-primary-500/30 rounded-lg text-white placeholder-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Descreva seu projeto, consulta ou colaboração..."
+                    placeholder="Descreva seu projeto, consulta ou colaboraÃ§Ã£o..."
                   />
                 </motion.div>
 

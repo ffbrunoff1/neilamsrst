@@ -24,7 +24,7 @@ export default function Header() {
   }
 
   const menuItems = [
-    { label: 'Início', id: 'home' },
+    { label: 'InÃ­cio', id: 'home' },
     { label: 'Sobre', id: 'about' },
     { label: 'Especialidades', id: 'services' },
     { label: 'Contato', id: 'contact' }
