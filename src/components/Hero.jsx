@@ -55,7 +55,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-primary-200 mb-8 leading-relaxed"
             >
-              Astronauta profissional dedicado Ã  exploraÃ§Ã£o espacial e descobertas cientÃ­ficas que moldam o futuro da humanidade no cosmos.
+              Astronauta profissional dedicado à exploração espacial e descobertas científicas que moldam o futuro da humanidade no cosmos.
             </motion.p>
 
             <motion.div
@@ -93,17 +93,17 @@ export default function Hero() {
             >
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">15+</div>
-                <div className="text-primary-300 text-sm">MissÃµes</div>
+                <div className="text-primary-300 text-sm">Missões</div>
               </div>
               <div className="w-px h-8 bg-primary-400/30"></div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">8</div>
-                <div className="text-primary-300 text-sm">Anos no EspaÃ§o</div>
+                <div className="text-primary-300 text-sm">Anos no Espaço</div>
               </div>
               <div className="w-px h-8 bg-primary-400/30"></div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">3</div>
-                <div className="text-primary-300 text-sm">EstaÃ§Ãµes Espaciais</div>
+                <div className="text-primary-300 text-sm">Estações Espaciais</div>
               </div>
             </motion.div>
           </motion.div>
@@ -168,7 +168,7 @@ export default function Hero() {
                   transition={{ delay: 0.6 }}
                   className="text-2xl font-bold text-white mb-2 text-center"
                 >
-                  MissÃ£o Ativa
+                  Missão Ativa
                 </motion.h3>
                 
                 <motion.p
@@ -177,7 +177,7 @@ export default function Hero() {
                   transition={{ delay: 0.7 }}
                   className="text-primary-300 text-center text-sm leading-relaxed"
                 >
-                  Atualmente em preparaÃ§Ã£o para a prÃ³xima expediÃ§Ã£o Ã  EstaÃ§Ã£o Espacial Internacional
+                  Atualmente em preparação para a próxima expedição à Estação Espacial Internacional
                 </motion.p>
 
                 <motion.div

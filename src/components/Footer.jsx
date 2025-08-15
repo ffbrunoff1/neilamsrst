@@ -11,17 +11,17 @@ export default function Footer() {
   }
 
   const quickLinks = [
-    { label: 'InÃ­cio', id: 'home' },
+    { label: 'Início', id: 'home' },
     { label: 'Sobre', id: 'about' },
     { label: 'Especialidades', id: 'services' },
     { label: 'Contato', id: 'contact' }
   ]
 
   const achievements = [
-    { label: 'MissÃµes Espaciais', value: '15+' },
-    { label: 'Horas no EspaÃ§o', value: '2.850' },
+    { label: 'Missões Espaciais', value: '15+' },
+    { label: 'Horas no Espaço', value: '2.850' },
     { label: 'Caminhadas Espaciais', value: '12' },
-    { label: 'Anos de ExperiÃªncia', value: '8+' }
+    { label: 'Anos de Experiência', value: '8+' }
   ]
 
   return (
@@ -92,7 +92,7 @@ export default function Footer() {
                 transition={{ delay: 0.2 }}
                 className="text-primary-300 leading-relaxed mb-6"
               >
-                Dedicado Ã  exploraÃ§Ã£o espacial e ao avanÃ§o da ciÃªncia, expandindo os horizontes da humanidade no cosmos atravÃ©s de missÃµes inovadoras e descobertas revolucionÃ¡rias.
+                Dedicado à exploração espacial e ao avanço da ciência, expandindo os horizontes da humanidade no cosmos através de missões inovadoras e descobertas revolucionárias.
               </motion.p>
 
               <motion.div
@@ -104,7 +104,7 @@ export default function Footer() {
               >
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-primary-400 text-sm">Ativo em MissÃ£o</span>
+                  <span className="text-primary-400 text-sm">Ativo em Missão</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -117,7 +117,7 @@ export default function Footer() {
             >
               <h4 className="text-lg font-semibold text-white mb-6 flex items-center">
                 <Globe className="w-5 h-5 mr-2 text-accent-400" />
-                NavegaÃ§Ã£o
+                Navegação
               </h4>
               <ul className="space-y-3">
                 {quickLinks.map((link, index) => (
@@ -208,8 +208,8 @@ export default function Footer() {
                 >
                   <Clock className="w-5 h-5 mt-0.5 text-accent-400 flex-shrink-0" />
                   <div>
-                    <p className="text-sm">24/7 EmergÃªncias</p>
-                    <p className="text-xs text-primary-400">Suporte tÃ©cnico</p>
+                    <p className="text-sm">24/7 Emergências</p>
+                    <p className="text-xs text-primary-400">Suporte técnico</p>
                   </div>
                 </motion.div>
               </div>
@@ -229,7 +229,7 @@ export default function Footer() {
               whileHover={{ scale: 1.02 }}
               className="text-primary-400 text-sm text-center md:text-left"
             >
-              Â© 2024 Neil Amrst. Todos os direitos reservados. | Explorando novos horizontes no cosmos.
+              © 2024 Neil Amrst. Todos os direitos reservados. | Explorando novos horizontes no cosmos.
             </motion.p>
             
             <motion.div

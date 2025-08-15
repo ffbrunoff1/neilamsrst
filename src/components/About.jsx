@@ -6,50 +6,50 @@ export default function About() {
   const achievements = [
     {
       icon: Rocket,
-      title: "MissÃµes Espaciais",
+      title: "Missões Espaciais",
       count: "15+",
-      description: "MissÃµes bem-sucedidas em Ã³rbita terrestre e lunar"
+      description: "Missões bem-sucedidas em órbita terrestre e lunar"
     },
     {
       icon: Clock,
-      title: "Horas no EspaÃ§o",
+      title: "Horas no Espaço",
       count: "2.850",
-      description: "Horas de experiÃªncia em ambiente de microgravidade"
+      description: "Horas de experiência em ambiente de microgravidade"
     },
     {
       icon: Star,
       title: "Caminhadas Espaciais",
       count: "12",
-      description: "EVAs realizadas com seguranÃ§a e precisÃ£o"
+      description: "EVAs realizadas com segurança e precisão"
     },
     {
       icon: Award,
-      title: "CertificaÃ§Ãµes",
+      title: "Certificações",
       count: "25+",
-      description: "CertificaÃ§Ãµes em sistemas espaciais e seguranÃ§a"
+      description: "Certificações em sistemas espaciais e segurança"
     }
   ]
 
   const milestones = [
     {
       year: "2015",
-      title: "FormaÃ§Ã£o na Academia",
-      description: "GraduaÃ§Ã£o em Engenharia Aeroespacial com especializaÃ§Ã£o em sistemas de navegaÃ§Ã£o"
+      title: "Formação na Academia",
+      description: "Graduação em Engenharia Aeroespacial com especialização em sistemas de navegação"
     },
     {
       year: "2017",
-      title: "Primeira MissÃ£o",
-      description: "Debut como especialista de missÃ£o na ISS com duraÃ§Ã£o de 6 meses"
+      title: "Primeira Missão",
+      description: "Debut como especialista de missão na ISS com duração de 6 meses"
     },
     {
       year: "2019",
-      title: "Comandante de MissÃ£o",
+      title: "Comandante de Missão",
       description: "Promovido a comandante liderando equipes internacionais"
     },
     {
       year: "2024",
-      title: "MissÃ£o Lunar",
-      description: "Selecionado para participar do programa de retorno Ã  Lua"
+      title: "Missão Lunar",
+      description: "Selecionado para participar do programa de retorno à Lua"
     }
   ]
 
@@ -82,7 +82,7 @@ export default function About() {
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
             Explorando os 
-            <span className="block text-gradient">Limites do ImpossÃ­vel</span>
+            <span className="block text-gradient">Limites do Impossível</span>
           </motion.h2>
 
           <motion.p
@@ -92,7 +92,7 @@ export default function About() {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-200 max-w-3xl mx-auto leading-relaxed"
           >
-            Com mais de uma dÃ©cada dedicada Ã  exploraÃ§Ã£o espacial, minha missÃ£o Ã© expandir os horizontes da humanidade no cosmos, contribuindo para descobertas que moldarÃ£o nosso futuro entre as estrelas.
+            Com mais de uma década dedicada à exploração espacial, minha missão é expandir os horizontes da humanidade no cosmos, contribuindo para descobertas que moldarão nosso futuro entre as estrelas.
           </motion.p>
         </motion.div>
 
@@ -140,25 +140,25 @@ export default function About() {
                   </div>
                 </motion.div>
 
-                <h3 className="text-2xl font-bold text-white mb-4">MissÃ£o Pessoal</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Missão Pessoal</h3>
                 <p className="text-primary-200 leading-relaxed mb-6">
-                  Acredito que a exploraÃ§Ã£o espacial Ã© fundamental para o avanÃ§o da humanidade. Cada missÃ£o representa uma oportunidade Ãºnica de expandir nosso conhecimento sobre o universo e desenvolver tecnologias que beneficiam a vida na Terra.
+                  Acredito que a exploração espacial é fundamental para o avanço da humanidade. Cada missão representa uma oportunidade única de expandir nosso conhecimento sobre o universo e desenvolver tecnologias que beneficiam a vida na Terra.
                 </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <Target className="w-5 h-5 text-accent-400 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-white mb-1">Pesquisa CientÃ­fica</h4>
-                      <p className="text-primary-300 text-sm">ContribuiÃ§Ã£o para estudos em microgravidade e ciÃªncias espaciais</p>
+                      <h4 className="font-semibold text-white mb-1">Pesquisa Científica</h4>
+                      <p className="text-primary-300 text-sm">Contribuição para estudos em microgravidade e ciências espaciais</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <Users className="w-5 h-5 text-accent-400 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-white mb-1">ColaboraÃ§Ã£o Internacional</h4>
-                      <p className="text-primary-300 text-sm">Trabalho em equipes multiculturais para missÃµes de sucesso</p>
+                      <h4 className="font-semibold text-white mb-1">Colaboração Internacional</h4>
+                      <p className="text-primary-300 text-sm">Trabalho em equipes multiculturais para missões de sucesso</p>
                     </div>
                   </div>
                 </div>
@@ -219,7 +219,7 @@ export default function About() {
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-white mb-4">Marcos da Carreira</h3>
             <p className="text-primary-200 max-w-2xl mx-auto">
-              Uma jornada de dedicaÃ§Ã£o, aprendizado e conquistas que moldaram minha trajetÃ³ria como astronauta profissional.
+              Uma jornada de dedicação, aprendizado e conquistas que moldaram minha trajetória como astronauta profissional.
             </p>
           </div>
 
