@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
+import React from 'react'
 import { motion } from 'framer-motion'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -9,11 +8,6 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
-  const { i18n } = useTranslation();
-
-  useEffect(() => {
-    document.documentElement.setAttribute('lang', i18n.language);
-  }, [i18n.language]);
   return (
     <div className="min-h-screen bg-space-galaxy relative overflow-hidden">
       <div className="bg-space-pattern bg-[length:20px_20px] absolute inset-0 opacity-30"></div>

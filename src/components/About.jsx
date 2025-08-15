@@ -1,57 +1,55 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Rocket, Star, Globe, Zap, Award, Users, Target, Clock } from 'lucide-react'
 
 export default function About() {
-  const { t } = useTranslation();
-    const achievements = [
+  const achievements = [
     {
       icon: Rocket,
-      title: t("about_achievements_missions"),
+      title: "Missões Espaciais",
       count: "15+",
-      description: t("about_achievements_missions_desc")
+      description: "Missões bem-sucedidas em órbita terrestre e lunar"
     },
     {
       icon: Clock,
-      title: t("about_achievements_hours"),
+      title: "Horas no Espaço",
       count: "2.850",
-      description: t("about_achievements_hours_desc")
+      description: "Horas de experiência em ambiente de microgravidade"
     },
     {
       icon: Star,
-      title: t("about_achievements_evas"),
+      title: "Caminhadas Espaciais",
       count: "12",
-      description: t("about_achievements_evas_desc")
+      description: "EVAs realizadas com segurança e precisão"
     },
     {
       icon: Award,
-      title: t("about_achievements_certifications"),
+      title: "Certificações",
       count: "25+",
-      description: t("about_achievements_certifications_desc")
+      description: "Certificações em sistemas espaciais e segurança"
     }
   ]
 
-    const milestones = [
+  const milestones = [
     {
       year: "2015",
-      title: t("about_milestone_2015_title"),
-      description: t("about_milestone_2015_desc")
+      title: "Formação na Academia",
+      description: "Graduação em Engenharia Aeroespacial com especialização em sistemas de navegação"
     },
     {
       year: "2017",
-      title: t("about_milestone_2017_title"),
-      description: t("about_milestone_2017_desc")
+      title: "Primeira Missão",
+      description: "Debut como especialista de missão na ISS com duração de 6 meses"
     },
     {
       year: "2019",
-      title: t("about_milestone_2019_title"),
-      description: t("about_milestone_2019_desc")
+      title: "Comandante de Missão",
+      description: "Promovido a comandante liderando equipes internacionais"
     },
     {
       year: "2024",
-      title: t("about_milestone_2024_title"),
-      description: t("about_milestone_2024_desc")
+      title: "Missão Lunar",
+      description: "Selecionado para participar do programa de retorno à Lua"
     }
   ]
 
@@ -73,7 +71,7 @@ export default function About() {
             className="inline-flex items-center px-4 py-2 rounded-full bg-primary-500/20 border border-primary-400/30 mb-6"
           >
             <Star className="w-4 h-4 text-accent-400 mr-2" />
-            <span className="text-primary-300 text-sm font-medium">{t('about_journey')}</span>
+            <span className="text-primary-300 text-sm font-medium">Sobre Minha Jornada</span>
           </motion.div>
 
           <motion.h2
@@ -94,7 +92,7 @@ export default function About() {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-200 max-w-3xl mx-auto leading-relaxed"
           >
-            {t('about_description')}
+            Com mais de uma década dedicada à exploração espacial, minha missão é expandir os horizontes da humanidade no cosmos, contribuindo para descobertas que moldarão nosso futuro entre as estrelas.
           </motion.p>
         </motion.div>
 
@@ -142,25 +140,25 @@ export default function About() {
                   </div>
                 </motion.div>
 
-                <h3 className="text-2xl font-bold text-white mb-4">{t('about_personal_mission_title')}</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Missão Pessoal</h3>
                 <p className="text-primary-200 leading-relaxed mb-6">
-                  {t('about_personal_mission_desc')}
+                  Acredito que a exploração espacial é fundamental para o avanço da humanidade. Cada missão representa uma oportunidade única de expandir nosso conhecimento sobre o universo e desenvolver tecnologias que beneficiam a vida na Terra.
                 </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <Target className="w-5 h-5 text-accent-400 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-white mb-1">{t('about_scientific_research')}</h4>
-                      <p className="text-primary-300 text-sm">{t('about_scientific_research_desc')}</p>
+                      <h4 className="font-semibold text-white mb-1">Pesquisa Científica</h4>
+                      <p className="text-primary-300 text-sm">Contribuição para estudos em microgravidade e ciências espaciais</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <Users className="w-5 h-5 text-accent-400 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-white mb-1">{t('about_international_collaboration')}</h4>
-                      <p className="text-primary-300 text-sm">{t('about_international_collaboration_desc')}</p>
+                      <h4 className="font-semibold text-white mb-1">Colaboração Internacional</h4>
+                      <p className="text-primary-300 text-sm">Trabalho em equipes multiculturais para missões de sucesso</p>
                     </div>
                   </div>
                 </div>
@@ -219,9 +217,9 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white mb-4">{t('about_career_milestones_title')}</h3>
+            <h3 className="text-3xl font-bold text-white mb-4">Marcos da Carreira</h3>
             <p className="text-primary-200 max-w-2xl mx-auto">
-              {t('about_career_milestones_desc')}
+              Uma jornada de dedicação, aprendizado e conquistas que moldaram minha trajetória como astronauta profissional.
             </p>
           </div>
 

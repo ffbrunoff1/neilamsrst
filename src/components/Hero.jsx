@@ -1,10 +1,8 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Rocket, Star, Globe, Zap, ArrowRight, ChevronDown } from 'lucide-react'
 
 export default function Hero() {
-  const { t } = useTranslation();
   const scrollToAbout = () => {
     const element = document.getElementById('about')
     if (element) {
@@ -36,7 +34,7 @@ export default function Hero() {
               className="inline-flex items-center px-4 py-2 rounded-full bg-primary-500/20 border border-primary-400/30 mb-6"
             >
               <Star className="w-4 h-4 text-accent-400 mr-2" />
-              <span className="text-primary-300 text-sm font-medium">{t('hero_explorer')}</span>
+              <span className="text-primary-300 text-sm font-medium">Explorador do Cosmos</span>
             </motion.div>
 
             <motion.h1
@@ -45,9 +43,9 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
             >
-              <span className="block text-white text-shadow">{t('hero_title_part1')}</span>
+              <span className="block text-white text-shadow">Neil</span>
               <span className="block bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 bg-clip-text text-transparent">
-                {t('hero_title_part2')}
+                Amrst
               </span>
             </motion.h1>
 
@@ -57,7 +55,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-primary-200 mb-8 leading-relaxed"
             >
-              {t('hero_description')}
+              Astronauta profissional dedicado à exploração espacial e descobertas científicas que moldam o futuro da humanidade no cosmos.
             </motion.p>
 
             <motion.div
@@ -72,7 +70,7 @@ export default function Hero() {
                 onClick={scrollToContact}
                 className="btn-primary inline-flex items-center group space-glow"
               >
-                <span>{t('hero_button_contact')}</span>
+                <span>Iniciar Contato</span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </motion.button>
 
@@ -83,7 +81,7 @@ export default function Hero() {
                 className="btn-secondary inline-flex items-center group"
               >
                 <Globe className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                <span>{t('hero_button_journey')}</span>
+                <span>Conhecer Jornada</span>
               </motion.button>
             </motion.div>
 

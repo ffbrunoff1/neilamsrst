@@ -1,11 +1,9 @@
 import React, { useRef, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { Mail, Phone, MapPin, Send, Star, Globe, Rocket, Clock, CheckCircle, AlertCircle } from 'lucide-react'
 
 export default function Contact() {
-  const { t } = useTranslation();
   const recaptchaRef = useRef(null)
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [status, setStatus] = useState({ message: '', isError: false, isLoading: false })
@@ -43,7 +41,7 @@ export default function Contact() {
 
       if (response.ok) {
         setStatus({ 
-          message: t('contact_success_message'), 
+          message: 'Mensagem enviada com sucesso! Entrarei em contato em breve.', 
           isError: false, 
           isLoading: false 
         })
@@ -53,7 +51,7 @@ export default function Contact() {
       }
     } catch (error) {
       setStatus({ 
-        message: t('contact_error_message'), 
+        message: 'Erro ao enviar mensagem. Tente novamente ou use os outros meios de contato.', 
         isError: true, 
         isLoading: false 
       })
@@ -62,24 +60,24 @@ export default function Contact() {
     }
   }
 
-    const contactInfo = [
+  const contactInfo = [
     {
       icon: Mail,
-      title: t("contact_email_title"),
-      value: t("contact_email_value"),
-      description: t("contact_email_desc")
+      title: "Email",
+      value: "contato@neilamrst.space",
+      description: "Resposta em até 24 horas"
     },
     {
       icon: Globe,
-      title: t("contact_location_title"),
-      value: t("contact_location_value"),
-      description: t("contact_location_desc")
+      title: "Localização",
+      value: "Centro de Treinamento Espacial",
+      description: "Disponível para missões globais"
     },
     {
       icon: Clock,
-      title: t("contact_availability_title"),
-      value: t("contact_availability_value"),
-      description: t("contact_availability_desc")
+      title: "Disponibilidade",
+      value: "24/7 para Emergências",
+      description: "Suporte técnico espacial"
     }
   ]
 
@@ -101,7 +99,7 @@ export default function Contact() {
             className="inline-flex items-center px-4 py-2 rounded-full bg-primary-500/20 border border-primary-400/30 mb-6"
           >
             <Star className="w-4 h-4 text-accent-400 mr-2" />
-            <span className="text-primary-300 text-sm font-medium">{t('contact_connect')}</span>
+            <span className="text-primary-300 text-sm font-medium">Vamos Conectar</span>
           </motion.div>
 
           <motion.h2
@@ -111,8 +109,8 @@ export default function Contact() {
             transition={{ delay: 0.3 }}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            {t('contact_title_part1')}
-            <span className="block text-gradient">{t('contact_title_part2')}</span>
+            Inicie uma Nova
+            <span className="block text-gradient">Missão Juntos</span>
           </motion.h2>
 
           <motion.p
@@ -122,7 +120,7 @@ export default function Contact() {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-200 max-w-3xl mx-auto leading-relaxed"
           >
-            {t('contact_description')}
+            Pronto para colaborar em projetos espaciais inovadores, consultorias técnicas ou compartilhar experiências sobre exploração espacial.
           </motion.p>
         </motion.div>
 
@@ -183,18 +181,18 @@ export default function Contact() {
                 <Rocket className="w-8 h-8 text-white" />
               </motion.div>
 
-              <h3 className="text-2xl font-bold text-white mb-4">{t('contact_special_projects_title')}</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Projetos Especiais</h3>
               <p className="text-primary-200 leading-relaxed mb-6">
-                {t('contact_special_projects_desc')}
+                Interessado em colaborações únicas? Consultorias para missões espaciais, treinamentos especializados ou palestras sobre exploração espacial.
               </p>
               
               <div className="flex items-center justify-center space-x-4 text-primary-300">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-sm">{t('contact_available')}</span>
+                  <span className="text-sm">Disponível</span>
                 </div>
                 <div className="w-px h-4 bg-primary-400/30"></div>
-                <div className="text-sm">{t('contact_quick_response')}</div>
+                <div className="text-sm">Resposta Rápida</div>
               </div>
             </motion.div>
           </motion.div>
@@ -207,8 +205,8 @@ export default function Contact() {
           >
             <div className="glass-effect rounded-3xl p-8 space-glow">
               <div className="mb-8">
-                <h3 className="text-2xl font-bold text-white mb-2">{t('contact_send_message_title')}</h3>
-                <p className="text-primary-300">{t('contact_send_message_desc')}</p>
+                <h3 className="text-2xl font-bold text-white mb-2">Enviar Mensagem</h3>
+                <p className="text-primary-300">Preencha o formulário abaixo e entrarei em contato em breve.</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -219,7 +217,7 @@ export default function Contact() {
                   transition={{ delay: 0.3 }}
                 >
                   <label htmlFor="name" className="block text-sm font-medium text-primary-300 mb-2">
-                    {t('contact_name_label')}
+                    Nome Completo
                   </label>
                   <input
                     type="text"
@@ -229,7 +227,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 bg-secondary-800/50 border border-primary-500/30 rounded-lg text-white placeholder-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
-                    placeholder={t('contact_name_placeholder')}
+                    placeholder="Seu nome completo"
                   />
                 </motion.div>
 
@@ -240,7 +238,7 @@ export default function Contact() {
                   transition={{ delay: 0.4 }}
                 >
                   <label htmlFor="email" className="block text-sm font-medium text-primary-300 mb-2">
-                    {t('contact_email_label')}
+                    Email
                   </label>
                   <input
                     type="email"
@@ -250,7 +248,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 bg-secondary-800/50 border border-primary-500/30 rounded-lg text-white placeholder-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
-                    placeholder={t('contact_email_placeholder')}
+                    placeholder="seu@email.com"
                   />
                 </motion.div>
 
@@ -261,7 +259,7 @@ export default function Contact() {
                   transition={{ delay: 0.5 }}
                 >
                   <label htmlFor="message" className="block text-sm font-medium text-primary-300 mb-2">
-                    {t('contact_message_label')}
+                    Mensagem
                   </label>
                   <textarea
                     id="message"
@@ -271,7 +269,7 @@ export default function Contact() {
                     required
                     rows={5}
                     className="w-full px-4 py-3 bg-secondary-800/50 border border-primary-500/30 rounded-lg text-white placeholder-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder={t('contact_message_placeholder')}
+                    placeholder="Descreva seu projeto, consulta ou colaboração..."
                   />
                 </motion.div>
 
@@ -324,7 +322,7 @@ export default function Contact() {
                   ) : (
                     <>
                       <Send className="w-5 h-5" />
-                      <span>{t('contact_submit_button')}</span>
+                      <span>Enviar Mensagem</span>
                     </>
                   )}
                 </motion.button>
