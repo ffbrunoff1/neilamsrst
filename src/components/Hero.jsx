@@ -1,10 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Rocket, Star, Globe, Zap, ArrowRight, ChevronDown } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
 
 export default function Hero() {
-  const { t } = useTranslation()
   const scrollToAbout = () => {
     const element = document.getElementById('about')
     if (element) {
@@ -57,7 +55,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-primary-200 mb-8 leading-relaxed"
             >
-              Astronauta profissional dedicado Á  exploração espacial e descobertas científicas que moldam o futuro da humanidade no cosmos.
+              Astronauta profissional dedicado Ã  exploraÃ§Ã£o espacial e descobertas cientÃ­ficas que moldam o futuro da humanidade no cosmos.
             </motion.p>
 
             <motion.div
@@ -94,18 +92,18 @@ export default function Hero() {
               className="flex items-center justify-center lg:justify-start space-x-8 mt-12"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">{t('hero_missions_count')}</div>
-                <div className="text-primary-300 text-sm">{t('hero_missions_label')}</div>
+                <div className="text-2xl font-bold text-white">15+</div>
+                <div className="text-primary-300 text-sm">MissÃµes</div>
               </div>
               <div className="w-px h-8 bg-primary-400/30"></div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">{t('hero_years_in_space_count')}</div>
-                <div className="text-primary-300 text-sm">{t('hero_years_in_space_label')}</div>
+                <div className="text-2xl font-bold text-white">8</div>
+                <div className="text-primary-300 text-sm">Anos no EspaÃ§o</div>
               </div>
               <div className="w-px h-8 bg-primary-400/30"></div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">{t('hero_space_stations_count')}</div>
-                <div className="text-primary-300 text-sm">{t('hero_space_stations_label')}</div>
+                <div className="text-2xl font-bold text-white">3</div>
+                <div className="text-primary-300 text-sm">EstaÃ§Ãµes Espaciais</div>
               </div>
             </motion.div>
           </motion.div>
@@ -170,7 +168,7 @@ export default function Hero() {
                   transition={{ delay: 0.6 }}
                   className="text-2xl font-bold text-white mb-2 text-center"
                 >
-                  Missão Ativa
+                  MissÃ£o Ativa
                 </motion.h3>
                 
                 <motion.p
@@ -179,7 +177,7 @@ export default function Hero() {
                   transition={{ delay: 0.7 }}
                   className="text-primary-300 text-center text-sm leading-relaxed"
                 >
-                  Atualmente em preparação para a próxima expedição Á  Estação Espacial Internacional
+                  Atualmente em preparaÃ§Ã£o para a prÃ³xima expediÃ§Ã£o Ã  EstaÃ§Ã£o Espacial Internacional
                 </motion.p>
 
                 <motion.div

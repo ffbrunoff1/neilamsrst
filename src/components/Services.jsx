@@ -6,39 +6,39 @@ export default function Services() {
   const specialties = [
     {
       icon: Rocket,
-      title: "Operações de Lançamento",
-      description: "Especialização em procedimentos de lançamento, sistemas de propulsão e operações de decolagem com segurança máxima.",
-      features: ["Protocolos de Segurança", "Sistemas de Propulsão", "Procedimentos de Emergência"]
+      title: "OperaÃ§Ãµes de LanÃ§amento",
+      description: "EspecializaÃ§Ã£o em procedimentos de lanÃ§amento, sistemas de propulsÃ£o e operaÃ§Ãµes de decolagem com seguranÃ§a mÃ¡xima.",
+      features: ["Protocolos de SeguranÃ§a", "Sistemas de PropulsÃ£o", "Procedimentos de EmergÃªncia"]
     },
     {
       icon: Satellite,
-      title: "Manutenção Orbital",
-      description: "Experiência em reparos e manutenção de equipamentos em ambiente de microgravidade e estações espaciais.",
-      features: ["Reparos EVA", "Sistemas de Suporte", "Equipamentos Científicos"]
+      title: "ManutenÃ§Ã£o Orbital",
+      description: "ExperiÃªncia em reparos e manutenÃ§Ã£o de equipamentos em ambiente de microgravidade e estaÃ§Ãµes espaciais.",
+      features: ["Reparos EVA", "Sistemas de Suporte", "Equipamentos CientÃ­ficos"]
     },
     {
       icon: Globe,
-      title: "Pesquisa Científica",
-      description: "Condução de experimentos em microgravidade, estudos de materiais e pesquisas biomédicas no espaço.",
-      features: ["Experimentos em Microgravidade", "Pesquisa Biomédica", "Análise de Materiais"]
+      title: "Pesquisa CientÃ­fica",
+      description: "ConduÃ§Ã£o de experimentos em microgravidade, estudos de materiais e pesquisas biomÃ©dicas no espaÃ§o.",
+      features: ["Experimentos em Microgravidade", "Pesquisa BiomÃ©dica", "AnÃ¡lise de Materiais"]
     },
     {
       icon: Brain,
-      title: "Liderança de Missão",
-      description: "Comando de equipes internacionais em missões de longa duração, coordenação de atividades e tomada de decisões críticas.",
-      features: ["Gestão de Equipes", "Comunicação Internacional", "Decisões Estratégicas"]
+      title: "LideranÃ§a de MissÃ£o",
+      description: "Comando de equipes internacionais em missÃµes de longa duraÃ§Ã£o, coordenaÃ§Ã£o de atividades e tomada de decisÃµes crÃ­ticas.",
+      features: ["GestÃ£o de Equipes", "ComunicaÃ§Ã£o Internacional", "DecisÃµes EstratÃ©gicas"]
     },
     {
       icon: Shield,
-      title: "Segurança Espacial",
-      description: "Desenvolvimento e implementação de protocolos de segurança para operações espaciais e situações de emergência.",
-      features: ["Protocolos de Emergência", "Análise de Riscos", "Treinamento de Segurança"]
+      title: "SeguranÃ§a Espacial",
+      description: "Desenvolvimento e implementaÃ§Ã£o de protocolos de seguranÃ§a para operaÃ§Ãµes espaciais e situaÃ§Ãµes de emergÃªncia.",
+      features: ["Protocolos de EmergÃªncia", "AnÃ¡lise de Riscos", "Treinamento de SeguranÃ§a"]
     },
     {
       icon: Settings,
       title: "Sistemas Espaciais",
-      description: "Operação e monitoramento de sistemas complexos de naves espaciais, estações e equipamentos de suporte.",
-      features: ["Monitoramento de Sistemas", "Diagnóstico Técnico", "Manutenção Preventiva"]
+      description: "OperaÃ§Ã£o e monitoramento de sistemas complexos de naves espaciais, estaÃ§Ãµes e equipamentos de suporte.",
+      features: ["Monitoramento de Sistemas", "DiagnÃ³stico TÃ©cnico", "ManutenÃ§Ã£o Preventiva"]
     }
   ]
 
@@ -78,7 +78,7 @@ export default function Services() {
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
             Expertise em
-            <span className="block text-gradient">Operações Espaciais</span>
+            <span className="block text-gradient">OperaÃ§Ãµes Espaciais</span>
           </motion.h2>
 
           <motion.p
@@ -88,7 +88,7 @@ export default function Services() {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-200 max-w-3xl mx-auto leading-relaxed"
           >
-            Combinando conhecimento técnico avançado com experiência prática em ambiente espacial, oferecendo expertise em múltiplas áreas da exploração espacial.
+            Combinando conhecimento tÃ©cnico avanÃ§ado com experiÃªncia prÃ¡tica em ambiente espacial, oferecendo expertise em mÃºltiplas Ã¡reas da exploraÃ§Ã£o espacial.
           </motion.p>
         </motion.div>
 
@@ -162,12 +162,12 @@ export default function Services() {
           </motion.div>
 
           <h3 className="text-3xl font-bold text-white mb-6">
-            Pronto para a Próxima
-            <span className="block text-gradient">Missão</span>
+            Pronto para a PrÃ³xima
+            <span className="block text-gradient">MissÃ£o</span>
           </h3>
 
           <p className="text-xl text-primary-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Com experiência comprovada em operações espaciais críticas, estou disponível para consultoria, treinamento e participação em novos projetos de exploração espacial.
+            Com experiÃªncia comprovada em operaÃ§Ãµes espaciais crÃ­ticas, estou disponÃ­vel para consultoria, treinamento e participaÃ§Ã£o em novos projetos de exploraÃ§Ã£o espacial.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -178,7 +178,7 @@ export default function Services() {
               className="btn-primary inline-flex items-center group space-glow"
             >
               <Users className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-              <span>Iniciar Colaboração</span>
+              <span>Iniciar ColaboraÃ§Ã£o</span>
             </motion.button>
 
             <motion.div
@@ -190,12 +190,12 @@ export default function Services() {
             >
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-sm">Disponível</span>
+                <span className="text-sm">DisponÃ­vel</span>
               </div>
               <div className="w-px h-4 bg-primary-400/30"></div>
               <div className="flex items-center space-x-2">
                 <Zap className="w-4 h-4 text-accent-400" />
-                <span className="text-sm">Resposta Rápida</span>
+                <span className="text-sm">Resposta RÃ¡pida</span>
               </div>
             </motion.div>
           </div>

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -42,7 +42,7 @@ module.exports = {
       },
       backgroundImage: {
         'space-pattern':
-          'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 1px)',
+          'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)',
         'space-nebula':
           'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
         'space-galaxy':
