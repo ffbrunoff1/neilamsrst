@@ -3,8 +3,8 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 // 1. Importe os arquivos JSON
-import translationEN from './locales/en/translation.json';
-import translationPT from './locales/pt/translation.json';
+import translationEN from './locales/en/translation.json' assert { type: 'json' };
+import translationPT from './locales/pt/translation.json' assert { type: 'json' };
 
 // 2. Crie o objeto de recursos a partir dos arquivos importados
 const resources = {
