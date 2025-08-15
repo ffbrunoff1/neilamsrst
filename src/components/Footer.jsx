@@ -92,7 +92,7 @@ export default function Footer() {
                 transition={{ delay: 0.2 }}
                 className="text-primary-300 leading-relaxed mb-6"
               >
-                Dedicado à exploração espacial e ao avanço da ciência, expandindo os horizontes da humanidade no cosmos através de missões inovadoras e descobertas revolucionárias.
+                Dedicado Á  exploração espacial e ao avanço da ciência, expandindo os horizontes da humanidade no cosmos através de missões inovadoras e descobertas revolucionárias.
               </motion.p>
 
               <motion.div

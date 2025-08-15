@@ -43,7 +43,7 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
             >
-              <span className="block text-white text-shadow">Neil</span>
+              <span className="block text-primary-400 text-shadow">Neil</span>
               <span className="block bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 bg-clip-text text-transparent">
                 Amrst
               </span>
@@ -55,7 +55,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-primary-200 mb-8 leading-relaxed"
             >
-              Astronauta profissional dedicado à exploração espacial e descobertas científicas que moldam o futuro da humanidade no cosmos.
+              Astronauta profissional dedicado Á  exploração espacial e descobertas científicas que moldam o futuro da humanidade no cosmos.
             </motion.p>
 
             <motion.div
@@ -177,7 +177,7 @@ export default function Hero() {
                   transition={{ delay: 0.7 }}
                   className="text-primary-300 text-center text-sm leading-relaxed"
                 >
-                  Atualmente em preparação para a próxima expedição à Estação Espacial Internacional
+                  Atualmente em preparação para a próxima expedição Á  Estação Espacial Internacional
                 </motion.p>
 
                 <motion.div

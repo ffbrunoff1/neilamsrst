@@ -49,7 +49,7 @@ export default function About() {
     {
       year: "2024",
       title: "Missão Lunar",
-      description: "Selecionado para participar do programa de retorno à Lua"
+      description: "Selecionado para participar do programa de retorno Á  Lua"
     }
   ]
 
@@ -92,7 +92,7 @@ export default function About() {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-200 max-w-3xl mx-auto leading-relaxed"
           >
-            Com mais de uma década dedicada à exploração espacial, minha missão é expandir os horizontes da humanidade no cosmos, contribuindo para descobertas que moldarão nosso futuro entre as estrelas.
+            Com mais de uma década dedicada Á  exploração espacial, minha missão é expandir os horizontes da humanidade no cosmos, contribuindo para descobertas que moldarão nosso futuro entre as estrelas.
           </motion.p>
         </motion.div>
 
