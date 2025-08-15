@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Rocket, Menu, X, Star } from 'lucide-react'
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -23,11 +25,11 @@ export default function Header() {
     }
   }
 
-  const menuItems = [
-    { label: 'Início', id: 'home' },
-    { label: 'Sobre', id: 'about' },
-    { label: 'Especialidades', id: 'services' },
-    { label: 'Contato', id: 'contact' }
+    const menuItems = [
+    { label: t('menu_home'), id: 'home' },
+    { label: t('menu_about'), id: 'about' },
+    { label: t('menu_specialties'), id: 'services' },
+    { label: t('menu_contact'), id: 'contact' }
   ]
 
   return (
@@ -77,6 +79,8 @@ export default function Header() {
               <span className={`text-sm transition-all duration-300 ${
                 isScrolled ? 'text-primary-300' : 'text-primary-200'
               }`}>
+                {t('header_astronaut')}
+              </span>
                 Astronauta
               </span>
             </div>
@@ -84,6 +88,82 @@ export default function Header() {
 
           <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item, index) => (
+              <motion.button
+                key={item.id}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ 
+                  opacity: isMenuOpen ? 1 : 0, 
+                  x: isMenuOpen ? 0 : -20 
+                }}
+                transition={{ delay: index * 0.1 }}
+                onClick={() => scrollToSection(item.id)}
+                className="block w-full text-left px-4 py-3 text-primary-100 hover:text-primary-400 hover:bg-white/5 transition-all duration-300 rounded-lg"
+              >
+                {item.label}
+              </motion.button>
+            ))}
+            <motion.button
+              key="lang-toggle-mobile"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ 
+                opacity: isMenuOpen ? 1 : 0, 
+                x: isMenuOpen ? 0 : -20 
+              }}
+              transition={{ delay: menuItems.length * 0.1 }}
+              onClick={() => i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')}
+              className="block w-full text-left px-4 py-3 text-primary-100 hover:text-primary-400 hover:bg-white/5 transition-all duration-300 rounded-lg"
+            >
+              {i18n.language === 'pt' ? 'English' : 'Português'}
+            </motion.button>
+              <motion.button
+                key={item.id}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                onClick={() => scrollToSection(item.id)}
+                className={`font-medium transition-all duration-300 hover:text-primary-400 relative group ${
+                  isScrolled ? 'text-white' : 'text-primary-100'
+                }`}
+              >
+                {item.label}
+                <motion.div
+                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-400 to-accent-400 group-hover:w-full transition-all duration-300"
+                />
+              </motion.button>
+            ))}
+            <motion.button
+              key="lang-toggle-desktop"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: menuItems.length * 0.1 }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              onClick={() => i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')}
+              className={`font-medium transition-all duration-300 hover:text-primary-400 relative group ${
+                isScrolled ? 'text-white' : 'text-primary-100'
+              }`}
+            >
+              {i18n.language === 'pt' ? 'EN' : 'PT'}
+              <motion.div
+                className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-400 to-accent-400 group-hover:w-full transition-all duration-300"
+              />
+            </motion.button>
+              <motion.button
+                key={`lang-${item.id}`}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                onClick={() => i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')}
+                className={`font-medium transition-all duration-300 hover:text-primary-400 relative group ${
+                  isScrolled ? 'text-white' : 'text-primary-100'
+                }`}
+              >
+                {i18n.language === 'pt' ? 'EN' : 'PT'}
+                <motion.div
+                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-400 to-accent-400 group-hover:w-full transition-all duration-300"
+                />
+              </motion.button>
               <motion.button
                 key={item.id}
                 initial={{ opacity: 0, y: -20 }}

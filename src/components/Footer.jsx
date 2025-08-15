@@ -1,8 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Rocket, Star, Globe, Mail, MapPin, Clock } from 'lucide-react'
 
 export default function Footer() {
+  const { t } = useTranslation();
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -10,18 +12,18 @@ export default function Footer() {
     }
   }
 
-  const quickLinks = [
-    { label: 'Início', id: 'home' },
-    { label: 'Sobre', id: 'about' },
-    { label: 'Especialidades', id: 'services' },
-    { label: 'Contato', id: 'contact' }
+    const quickLinks = [
+    { label: t('menu_home'), id: 'home' },
+    { label: t('menu_about'), id: 'about' },
+    { label: t('menu_specialties'), id: 'services' },
+    { label: t('menu_contact'), id: 'contact' }
   ]
 
-  const achievements = [
-    { label: 'Missões Espaciais', value: '15+' },
-    { label: 'Horas no Espaço', value: '2.850' },
-    { label: 'Caminhadas Espaciais', value: '12' },
-    { label: 'Anos de Experiência', value: '8+' }
+    const achievements = [
+    { label: t('footer_achievements_missions'), value: '15+' },
+    { label: t('footer_achievements_hours'), value: '2.850' },
+    { label: t('footer_achievements_evas'), value: '12' },
+    { label: t('footer_achievements_experience'), value: '8+' }
   ]
 
   return (
@@ -81,7 +83,7 @@ export default function Footer() {
                   <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
                     Neil Amrst
                   </h3>
-                  <p className="text-primary-300 text-sm">Astronauta</p>
+                  <p className="text-primary-300 text-sm">{t('header_astronaut')}</p>
                 </div>
               </motion.div>
               
@@ -92,7 +94,7 @@ export default function Footer() {
                 transition={{ delay: 0.2 }}
                 className="text-primary-300 leading-relaxed mb-6"
               >
-                Dedicado à exploração espacial e ao avanço da ciência, expandindo os horizontes da humanidade no cosmos através de missões inovadoras e descobertas revolucionárias.
+                {t('footer_description')}
               </motion.p>
 
               <motion.div
@@ -104,7 +106,7 @@ export default function Footer() {
               >
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-primary-400 text-sm">Ativo em Missão</span>
+                  <span className="text-primary-400 text-sm">{t('footer_status')}</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -117,7 +119,7 @@ export default function Footer() {
             >
               <h4 className="text-lg font-semibold text-white mb-6 flex items-center">
                 <Globe className="w-5 h-5 mr-2 text-accent-400" />
-                Navegação
+                {t('footer_navigation')}
               </h4>
               <ul className="space-y-3">
                 {quickLinks.map((link, index) => (
@@ -148,7 +150,7 @@ export default function Footer() {
             >
               <h4 className="text-lg font-semibold text-white mb-6 flex items-center">
                 <Star className="w-5 h-5 mr-2 text-accent-400" />
-                Conquistas
+                {t('footer_achievements')}
               </h4>
               <div className="space-y-4">
                 {achievements.map((achievement, index) => (
@@ -176,7 +178,7 @@ export default function Footer() {
             >
               <h4 className="text-lg font-semibold text-white mb-6 flex items-center">
                 <Mail className="w-5 h-5 mr-2 text-accent-400" />
-                Contato
+                {t('footer_contact')}
               </h4>
               
               <div className="space-y-4">
@@ -186,8 +188,8 @@ export default function Footer() {
                 >
                   <Mail className="w-5 h-5 mt-0.5 text-accent-400 flex-shrink-0" />
                   <div>
-                    <p className="text-sm">contato@neilamrst.space</p>
-                    <p className="text-xs text-primary-400">Resposta em 24h</p>
+                    <p className="text-sm">{t('contact_email_value')}</p>
+                    <p className="text-xs text-primary-400">{t('footer_email_desc')}</p>
                   </div>
                 </motion.div>
 
@@ -197,8 +199,8 @@ export default function Footer() {
                 >
                   <MapPin className="w-5 h-5 mt-0.5 text-accent-400 flex-shrink-0" />
                   <div>
-                    <p className="text-sm">Centro de Treinamento Espacial</p>
-                    <p className="text-xs text-primary-400">Global</p>
+                    <p className="text-sm">{t('contact_location_value')}</p>
+                    <p className="text-xs text-primary-400">{t('footer_location_desc')}</p>
                   </div>
                 </motion.div>
 
@@ -208,8 +210,8 @@ export default function Footer() {
                 >
                   <Clock className="w-5 h-5 mt-0.5 text-accent-400 flex-shrink-0" />
                   <div>
-                    <p className="text-sm">24/7 Emergências</p>
-                    <p className="text-xs text-primary-400">Suporte técnico</p>
+                    <p className="text-sm">{t('contact_availability_value')}</p>
+                    <p className="text-xs text-primary-400">{t('footer_availability_desc')}</p>
                   </div>
                 </motion.div>
               </div>
@@ -229,14 +231,14 @@ export default function Footer() {
               whileHover={{ scale: 1.02 }}
               className="text-primary-400 text-sm text-center md:text-left"
             >
-              © 2024 Neil Amrst. Todos os direitos reservados. | Explorando novos horizontes no cosmos.
+              {t('footer_copyright', { year: new Date().getFullYear() })}
             </motion.p>
             
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2 text-primary-400 text-sm"
             >
-              <span>Criado com</span>
+              <span>{t('footer_created_with')}</span>
               <motion.a
                 href="https://papum.ai"
                 target="_blank"

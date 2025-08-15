@@ -1,44 +1,46 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Rocket, Satellite, Globe, Zap, Star, Target, Users, Brain, Shield, Settings } from 'lucide-react'
 
 export default function Services() {
-  const specialties = [
+  const { t } = useTranslation();
+    const specialties = [
     {
       icon: Rocket,
-      title: "Operações de Lançamento",
-      description: "Especialização em procedimentos de lançamento, sistemas de propulsão e operações de decolagem com segurança máxima.",
-      features: ["Protocolos de Segurança", "Sistemas de Propulsão", "Procedimentos de Emergência"]
+      title: t("services_launch_operations_title"),
+      description: t("services_launch_operations_desc"),
+      features: [t("services_launch_operations_feat1"), t("services_launch_operations_feat2"), t("services_launch_operations_feat3")]
     },
     {
       icon: Satellite,
-      title: "Manutenção Orbital",
-      description: "Experiência em reparos e manutenção de equipamentos em ambiente de microgravidade e estações espaciais.",
-      features: ["Reparos EVA", "Sistemas de Suporte", "Equipamentos Científicos"]
+      title: t("services_orbital_maintenance_title"),
+      description: t("services_orbital_maintenance_desc"),
+      features: [t("services_orbital_maintenance_feat1"), t("services_orbital_maintenance_feat2"), t("services_orbital_maintenance_feat3")]
     },
     {
       icon: Globe,
-      title: "Pesquisa Científica",
-      description: "Condução de experimentos em microgravidade, estudos de materiais e pesquisas biomédicas no espaço.",
-      features: ["Experimentos em Microgravidade", "Pesquisa Biomédica", "Análise de Materiais"]
+      title: t("services_scientific_research_title"),
+      description: t("services_scientific_research_desc"),
+      features: [t("services_scientific_research_feat1"), t("services_scientific_research_feat2"), t("services_scientific_research_feat3")]
     },
     {
       icon: Brain,
-      title: "Liderança de Missão",
-      description: "Comando de equipes internacionais em missões de longa duração, coordenação de atividades e tomada de decisões críticas.",
-      features: ["Gestão de Equipes", "Comunicação Internacional", "Decisões Estratégicas"]
+      title: t("services_mission_leadership_title"),
+      description: t("services_mission_leadership_desc"),
+      features: [t("services_mission_leadership_feat1"), t("services_mission_leadership_feat2"), t("services_mission_leadership_feat3")]
     },
     {
       icon: Shield,
-      title: "Segurança Espacial",
-      description: "Desenvolvimento e implementação de protocolos de segurança para operações espaciais e situações de emergência.",
-      features: ["Protocolos de Emergência", "Análise de Riscos", "Treinamento de Segurança"]
+      title: t("services_space_security_title"),
+      description: t("services_space_security_desc"),
+      features: [t("services_space_security_feat1"), t("services_space_security_feat2"), t("services_space_security_feat3")]
     },
     {
       icon: Settings,
-      title: "Sistemas Espaciais",
-      description: "Operação e monitoramento de sistemas complexos de naves espaciais, estações e equipamentos de suporte.",
-      features: ["Monitoramento de Sistemas", "Diagnóstico Técnico", "Manutenção Preventiva"]
+      title: t("services_space_systems_title"),
+      description: t("services_space_systems_desc"),
+      features: [t("services_space_systems_feat1"), t("services_space_systems_feat2"), t("services_space_systems_feat3")]
     }
   ]
 
@@ -67,7 +69,7 @@ export default function Services() {
             className="inline-flex items-center px-4 py-2 rounded-full bg-primary-500/20 border border-primary-400/30 mb-6"
           >
             <Target className="w-4 h-4 text-accent-400 mr-2" />
-            <span className="text-primary-300 text-sm font-medium">Especialidades</span>
+            <span className="text-primary-300 text-sm font-medium">{t('services_specialties')}</span>
           </motion.div>
 
           <motion.h2
@@ -77,8 +79,8 @@ export default function Services() {
             transition={{ delay: 0.3 }}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Expertise em
-            <span className="block text-gradient">Operações Espaciais</span>
+            {t('services_title_part1')}
+            <span className="block text-gradient">{t('services_title_part2')}</span>
           </motion.h2>
 
           <motion.p
@@ -88,7 +90,7 @@ export default function Services() {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-200 max-w-3xl mx-auto leading-relaxed"
           >
-            Combinando conhecimento técnico avançado com experiência prática em ambiente espacial, oferecendo expertise em múltiplas áreas da exploração espacial.
+            {t('services_description')}
           </motion.p>
         </motion.div>
 
@@ -162,12 +164,12 @@ export default function Services() {
           </motion.div>
 
           <h3 className="text-3xl font-bold text-white mb-6">
-            Pronto para a Próxima
-            <span className="block text-gradient">Missão</span>
+            {t('services_ready_for_next_mission_title')}
+            <span className="block text-gradient">{t('services_ready_for_next_mission_title2')}</span>
           </h3>
 
           <p className="text-xl text-primary-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Com experiência comprovada em operações espaciais críticas, estou disponível para consultoria, treinamento e participação em novos projetos de exploração espacial.
+            {t('services_ready_for_next_mission_desc')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -178,7 +180,7 @@ export default function Services() {
               className="btn-primary inline-flex items-center group space-glow"
             >
               <Users className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-              <span>Iniciar Colaboração</span>
+              <span>{t('services_start_collaboration')}</span>
             </motion.button>
 
             <motion.div
@@ -190,12 +192,12 @@ export default function Services() {
             >
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-sm">Disponível</span>
+                <span className="text-sm">{t('services_available')}</span>
               </div>
               <div className="w-px h-4 bg-primary-400/30"></div>
               <div className="flex items-center space-x-2">
                 <Zap className="w-4 h-4 text-accent-400" />
-                <span className="text-sm">Resposta Rápida</span>
+                <span className="text-sm">{t('services_quick_response')}</span>
               </div>
             </motion.div>
           </div>
