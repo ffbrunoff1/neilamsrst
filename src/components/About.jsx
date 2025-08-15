@@ -1,16 +1,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Rocket, Star, Globe, Zap, Award, Users, Target, Clock } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
 
 export default function About() {
-  const { t } = useTranslation()
   const achievements = [
     {
       icon: Rocket,
       title: "Missões Espaciais",
       count: "15+",
-      description: "Missões bem sucedidas em órbita terrestre e lunar"
+      description: "Missões bem-sucedidas em órbita terrestre e lunar"
     },
     {
       icon: Clock,
@@ -51,7 +49,7 @@ export default function About() {
     {
       year: "2024",
       title: "Missão Lunar",
-      description: "Selecionado para participar do programa de retorno Á  Lua"
+      description: "Selecionado para participar do programa de retorno à Lua"
     }
   ]
 
@@ -83,8 +81,8 @@ export default function About() {
             transition={{ delay: 0.3 }}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            {t('about_title_part1')}
-            <span className="block text-gradient">{t('about_title_part2')}</span>
+            Explorando os 
+            <span className="block text-gradient">Limites do Impossível</span>
           </motion.h2>
 
           <motion.p
@@ -94,7 +92,7 @@ export default function About() {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-200 max-w-3xl mx-auto leading-relaxed"
           >
-            Com mais de uma década dedicada Á  exploração espacial, minha missão é expandir os horizontes da humanidade no cosmos, contribuindo para descobertas que moldarão nosso futuro entre as estrelas.
+            Com mais de uma década dedicada à exploração espacial, minha missão é expandir os horizontes da humanidade no cosmos, contribuindo para descobertas que moldarão nosso futuro entre as estrelas.
           </motion.p>
         </motion.div>
 
